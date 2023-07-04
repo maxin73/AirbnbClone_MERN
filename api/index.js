@@ -48,7 +48,7 @@ async function uploadToS3(path, originalFilename, mimetype) {
   return `https://${bucket}.s3.amazonaws.com/${newFilename}`;
 }
 
-app.get('/test', (req,res) => {
+app.get('/api/test', (req,res) => {
   res.json('test ok');
 });
 
